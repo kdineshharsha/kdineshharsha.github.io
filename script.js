@@ -1,26 +1,25 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const fs = require('fs');
+function saveContent() {
+  const content = document.getElementById('editableContent').innerHTML;
 
-const app = express();
-
-// Middleware to parse JSON bodies
-app.use(bodyParser.json());
-
-// Handle POST request to save content
-app.post('/save', (req, res) => {
-  const { content } = req.body;
-
-  fs.writeFile('saved_content.html', content, err => {
-    if (err) {
-      console.error(err);
-      res.status(500).send('Error saving content');
-    } else {
-      res.status(200).send('Content saved successfully');
+  fetch('/save', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ content }),
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
     }
+    return response.text();
+  })
+  .then(data => {
+    console.log(data); // Log successful response
+    alert('Changes saved successfully!');
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    alert('Failed to save changes!');
   });
-});
-
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
-});
+}

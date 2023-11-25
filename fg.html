@@ -4,24 +4,36 @@
   <title>Editable Website</title>
 </head>
 <body>
-  <h1 id="editableHeading" contenteditable="true">Editable Heading</h1>
-  <p id="editableParagraph" contenteditable="true">Editable Paragraph</p>
+  <div contenteditable="true" id="editableContent">
+    <h1>Edit and Save</h1>
+    <p>Editable paragraph. Modify this content.</p>
+  </div>
+  
+  <button onclick="saveContent()">Save Changes</button>
 
   <script>
-    // Save the edited content to localStorage
-    document.getElementById('editableHeading').addEventListener('input', function() {
-      localStorage.setItem('headingContent', this.innerHTML);
-    });
-
-    document.getElementById('editableParagraph').addEventListener('input', function() {
-      localStorage.setItem('paragraphContent', this.innerHTML);
-    });
-
-    // Retrieve the saved content from localStorage on page load
-    window.onload = function() {
-      document.getElementById('editableHeading').innerHTML = localStorage.getItem('headingContent') || 'Editable Heading';
-      document.getElementById('editableParagraph').innerHTML = localStorage.getItem('paragraphContent') || 'Editable Paragraph';
-    };
+    function saveContent() {
+      const content = document.getElementById('editableContent').innerHTML;
+      
+      // Send the edited content to the server using a fetch request
+      fetch('/save', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ content }),
+      })
+      .then(response => {
+        if (response.ok) {
+          alert('Changes saved successfully!');
+        } else {
+          alert('Failed to save changes!');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+    }
   </script>
 </body>
 </html>

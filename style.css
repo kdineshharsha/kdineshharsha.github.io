@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+
+
+.main_section{
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-color: #000000; */
+    background-position: center;
+    height: 900px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/main_bg.jpg');
+}
+
+
+/* .main_bg{
+    width: 100%;
+    height: 900px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+nav{
+    top: 0;
+    position: relative;
+    width: 100%;
+    left: 0;
+    padding: 34px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    /* background-color: blue; */
+}
+
+nav::before{
+    content: '';
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+    z-index: -1;
+}
+
+#check{
+    position: absolute;
+    display: none;
+
+}
+
+.logo a{
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+
+.nav_links{
+   
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav_links li{
+    display:inline-block;
+    margin:0 20px;
+
+}
+
+.nav_links li a{
+    text-decoration: none;
+    color:white;
+    font-family: montserrat;
+    font-size: 18px;
+    font-weight:500;
+
+}
+
+.login_btn{
+    width: 150px;
+    height: 45px;
+    border-radius: 40px;
+    border:0;
+    background-color: #4FFF00;
+    font-size: 18px;
+    color: #000000;
+    font-family: montserrat;
+    font-weight: 700;
+}
+
+.login_btn:hover{
+    -webkit-box-shadow:0px 0px 19px 9px rgba(81,255,0,0.9);
+    -moz-box-shadow: 0px 0px 19px 9px rgba(81,255,0,0.9);
+    box-shadow: 0px 0px 19px 9px rgba(81,255,0,0.9);
+
+}
+
+.icons{
+    position: absolute;
+    font-size:24px ;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* BREAKPOINTS */
+@media (max-width: 1000px){
+    nav{
+        padding: 34px 50px;
+    }
+}
+
+@media (max-width: 945px){
+    .icons{
+        display: inline-flex;
+        right: 50px;
+    }
+
+    #check:checked~ .icons > #menu_icon {
+        display: none;
+    }
+    
+
+    #check:checked~ .icons > #close_icon{
+        display: block;
+    }
+
+
+    .icons #close_icon{
+        display: none;
+    }
+    
+    .nav_links{
+        position:absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: red;
+        overflow: hidden;
+        transition: .3s ease;
+
+    }
+     
+
+    .login_btn{
+        /* position: absolute; */
+        
+        top:0;
+        left: 0;
+    }
+
+    .nav_links li{
+        display: block;
+        margin: 20px 0;
+        text-align: center;
+
+    }
+
+
+    #check:checked ~ .nav_links {
+        height: 310px; /* or any other color you prefer */
+      }
+
+    .nav_links > a {
+        display: block;
+        font-size: 1.5em;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+}
+   
+.home_header_1{
+    position: absolute;
+    top: 253px;
+    color: white;
+    font-weight: 700;
+    font-size: 72px;
+    /* margin: 0 80px; */
+}
+
+.home_header_1 >p{
+    margin: 0;
+}
+
+.home_header_1_yellow{
+    color: #4FFF00;
+}
+
+.home_header_2{
+    position: absolute;
+    top: 459px;
+    margin: 0 80px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 30px;
+}
+
+.home_header_2 >p{
+    margin: 0;
+}
+
+.start_btn{
+    color: #000000;
+    font-family: montserrat;
+    position: absolute;
+    height: 57px;
+    width: 180px;
+    border: none;
+    border-radius: 40px;
+    background-color: #4FFF00;
+    font-weight: 700;
+    font-size: 18px;
+    top: 602px;
+    left: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow:0px 0px 55px 0px rgba(81,255,0,0.58);
+    -moz-box-shadow: 0px 0px 55px 0px rgba(81,255,0,0.58);
+    box-shadow: 0px 0px 55px 0px rgba(81,255,0,0.58);
+
+
+}
+
+#st_btn{
+    font-size: 24px;
+
+}
+
+.main_text{
+    display: block;
+    gap: 90px;
+}

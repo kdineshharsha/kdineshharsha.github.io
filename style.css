@@ -514,7 +514,7 @@ form > input::placeholder{
     .login_form{
         /* min-width: 300px; */
         height: 403px;
-        width: 292px;
+        width: 250px;
         margin-right: 60px;
 
     } 

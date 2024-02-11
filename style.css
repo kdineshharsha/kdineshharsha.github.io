@@ -268,13 +268,79 @@ nav::before{
     border-radius: 16px;
     height: 563px;
     width: 422px;
-    background-color: #441818;
+    background-color: #fafafa;
     box-shadow: 6px 6px 16px 0px rgba(0,0,0,0.62);
+    padding: 42px 57px;
+    display: grid;
+    justify-content: center;
 
 
 }
 
+.form_header{
+    margin-top: 0;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
 
+}
+
+form > label{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+form > input{
+    margin:28px 0;
+    width: 300px;
+    height: 56px;
+    border-radius: 16px;
+    border: 0;
+    background-color: #d9d9d9;
+    outline: none;
+    
+}
+
+form >input:hover{
+    border: 2px solid;
+    border-color: #ff4800;
+
+}
+
+form > input::placeholder{
+    font-family: montserrat;
+    padding: 20px;
+
+
+}
+
+.form_footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_footer_text{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form_btn{
+    width: 300px;
+    height: 56px ;
+    border-radius: 16px;
+    border: 0;
+    background-color: #4FFF00;
+    color: #000000;
+    font-size: 18px;
+    font-family: montserrat;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.form_btn:hover{
+    background-color: #ff4800;
+}
 
 
 /* BREAKPOINTS */
@@ -448,7 +514,7 @@ nav::before{
     .login_form{
         /* min-width: 300px; */
         height: 403px;
-        width: 245px;
+        width: 292px;
         margin-right: 60px;
 
     } 
@@ -461,4 +527,52 @@ nav::before{
         padding:20px ;
     }
 
+    .login_form{
+        padding:10px;
+    }
+
+    form{
+        width: 220px;
+        height: 403px;
+    }
+
+    .form_header{
+        font-size: 32px;
+        margin: 10px;
+        margin-bottom: 10px;
+    }
+
+    form > label{
+        font-size: 14px;
+    }
+
+
+    form > input{
+        width: 220px;
+        margin: 12px 0;
+        height: 46px;
+
+    }
+
+    input::placeholder{
+        font-size: 12px;
+    }
+
+    .form_btn{
+        width: 220px;
+        margin-top: 30px;
+        height: 46px;
+    }
+
+    .form_footer{
+        padding-top: 10px;
+    }
+    .form_footer_text{
+        font-size: 12px;
+
+    }
+
+
+
+    
 }

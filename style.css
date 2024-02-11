@@ -659,6 +659,10 @@ form > input::placeholder{
 
     }
 
+    .third_page{
+        padding: 0 40px ;
+    }
+
     .third_page_header_1{
         font-size: 48px;
     }

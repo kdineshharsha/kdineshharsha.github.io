@@ -586,7 +586,25 @@ table td{
 
 }
 
+.site_links{
+    flex-wrap: wrap;
+    padding: 80px 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
 
+.site_links_header{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.site_links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
 
 
 /* BREAKPOINTS */
@@ -781,6 +799,10 @@ table td{
     .contact_no a{
         font-size: 14px;
 
+    }
+
+    .site_links li a{
+        font-size: 14px;
     }
 }
 

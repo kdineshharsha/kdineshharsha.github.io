@@ -8,6 +8,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: montserrat;
+    /* min-width: 383px; */
 }
 
 
@@ -368,7 +369,7 @@ form > input::placeholder{
 }
 
 .box1{
-    flex: 0 0 305px;
+    /* flex: 0 0 305px; */
     margin-bottom: 40px;
     height: 370px;
     width: 305px;
@@ -381,7 +382,7 @@ form > input::placeholder{
 
 }
 .box2{
-    flex: 0 0 305px;
+    /* flex: 0 0 305px; */
     margin-bottom: 40px;
     height: 370px;
     width: 305px;
@@ -393,7 +394,7 @@ form > input::placeholder{
 
 }
 .box3{
-    flex: 0 0 305px;
+    /* flex: 0 0 305px ; */
     margin-bottom: 40px;
     height: 370px;
     width: 305px;
@@ -426,6 +427,96 @@ form > input::placeholder{
 
 
 
+/* ------------Fourth page styles--------------- */
+
+
+.fourth_page{
+    background-color: #000000;
+    padding: 0 80px 34px 80px;
+}
+
+.fourth_page_header_1{
+    font-size: 72px;
+    font-weight: 700px;
+    color: white;
+    text-align: center;
+    
+}
+
+.fourth_page_text_1{
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 24px;
+}
+
+.price_table{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+
+    border-collapse: collapse;
+    background-color: white;
+    border: none;
+    margin: 40px 0;
+
+  
+}
+
+
+
+table th{
+
+
+    background-color:#4FFF00 ;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    font-weight: 700;
+    padding: 0;
+    
+}
+
+table td{
+    /* background-color:rgba(79, 255, 0, 0.25) ; */
+    color:#000000;
+    font-size: 20px;
+    font-weight: 500;
+    width: 300px;
+    text-align: center; 
+    padding: 4px;
+    border: none;
+}
+
+.data_row{
+    border-top:8px solid white ;
+    background-color:rgba(79, 255, 0, 0.25) ;
+
+    
+}
+
+.table_footer{
+    background-color:rgba(2,48,32,1);
+    border-top:8px solid white ;
+}
+
+.table_footer > td{
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.fourth_page_footer{
+    color:white;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500; 
+}
+
+
 
 
 
@@ -445,6 +536,10 @@ form > input::placeholder{
     .second_image{
         height: 305px;
         width: 305px;
+    }
+
+    .fourth_page{
+        padding: 0 60px;
     }
 
 }
@@ -493,6 +588,18 @@ form > input::placeholder{
     .double_image{
         justify-content: center;
     
+    }
+
+    .fourth_page_header_1{
+        font-size: 60px;
+    }
+    
+    .fourth_page_text_1{
+        font-size: 20px;
+    }
+
+    .fourth_page_footer{
+        font-size: 20px;
     }
 
     /* .login_form{
@@ -565,6 +672,19 @@ form > input::placeholder{
     }
 
 
+    table th{
+        font-size: 24px;
+    }
+
+    .data_row td{
+        font-size: 14px;
+    }
+
+    .table_footer td{
+        font-size: 24px;
+    }
+
+
     
 }
 
@@ -602,11 +722,12 @@ form > input::placeholder{
         /* min-width: 300px; */
         height: 400px;
         width: 250px;
-        margin-right: 60px;
+        /* margin-right: 60px; */
 
     } 
     .double_image{
-        width: 290px;
+        /* width: 290px; */
+        width: 227px;
         flex-basis: 300px;
     }
 
@@ -667,7 +788,68 @@ form > input::placeholder{
         font-size: 48px;
     }
 
+
+    .box_header{
+        font-size: 24px;
+        margin:12px 0;
+    }
+
+    .box_text{
+        font-size: 12px;
+    }
     
+    .box1{
+        height: 265px;
+        width: 250px;
+    }
+    .box2{
+        height: 265px;
+        width: 250px;
+    }
+    .box3{
+        height: 265px;
+        width: 250px;
+
+    }
+
+    .box_image{
+        height: 109px;
+        width: 99px;
+    }
+    
+    .fourth_page{
+        padding: 0 40px;
+    }
+
+    .fourth_page_header_1{
+        font-size: 48px;
+    }
+
+    .fourth_page_text_1{
+        font-size: 18px;
+    }
+
+    table th{
+        font-size: 20px;
+    }
+
+
+    .data_row td{
+        font-size: 12px;
+    }
+
+    .table_footer td{
+        font-size: 20px;
+    }
+
+    .fourth_page_footer{
+        font-size: 18px;
+    }
 }
+
+
+
+
+
 
 

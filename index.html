@@ -1,235 +1,1038 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+*{
+    box-sizing: border-box;
+}
 
-    <title>Document</title>
-</head>
+html{
+    scroll-behavior: smooth;
+}
 
-<body>
-    <div class="main_section">
-
-        <!-- <img src="assets/360_F_286779578_lLmTnvaIP6oxRK6gTVSmxfBfw1eLUQm5-transformed 1.jpg" alt="main background" class="main_bg"> -->
-
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="icons">
-
-                <i class='bx bx-menu' id="menu_icon"></i>
-                <i class='bx bx-x' id="close_icon"></i>
-            </label>
-            <div class="logo"><a href="#">CodeLK</a></div>
-
-            <ul class="nav_links" id="navco">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Contacts</a></li>
-                <li><a href=""><button class="login_btn">Login</button></a></li>
-            </ul>
-        </nav>
-        <div class="home_header_1">
-            <p>CODE LIKE A <span class="home_header_1_yellow">PRO</span><br>
-                Learn, Code, Create, Repeat</p>
-        </div>
-        <div class="home_header_2">
-            <p>Dive into the exciting world of coding with our interactive courses, hands-on <br> projects, and
-                expert-led tutorials. Whether you're a total beginner or a seasoned <br> pro, we have something for
-                everyone!</p>
-        </div>
-        <div>
-            <button class="start_btn"> Get Started <i class='bx bxs-right-arrow-alt bx-fade-right-hover'
-                    id="st_btn"></i></button>
-
-        </div>
-
-    </div>
-
-    <!------------ SECOND PAGE ---------------------->
-
-    <div class="second_page">
-        <h1 class="second_page_header_1"> Welcome To <br>CodeLK</h1>
-        <div class="contain">
-            <div class="double_image">
-                <div class="first_image"></div>
-                <div class="second_image"></div>
-            </div>
-            <div class="login_form">
-                <H1 class="form_header">Login</H1>
-                <form action="">
-                    <label for="Name">Username</label><br>
-                    <input type="text" name="name" placeholder="Enter your username" required /><br />
-                    <label for="Name">Password</label><br>
-                    <input type="password" name="password" placeholder="Enter your password" required /><br />
-                    <div class="form_footer">
-                        <h1 class="form_footer_text">Create account</h1>
-                        <h1 class="form_footer_text">Forgot password ?</h1>
-                    </div>
-                    <button class="form_btn">Login</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!---------------- THIRD PAGE---------------------->
-
-    <div class="third_page">
-        <h1 class="third_page_header_1">Why are you using <br>CodeLK ?</h1>
-        <div class="third_container">
-            <div class="box1">
-                <h1 class="box_header">Fun Learning</h1>
-                <img src="/assets/learn.png" alt="Fun Learning" class="box_image">
-                <h1 class="box_text">Enjoy learning with interactive lessons and coding challenges that make mastering
-                    coding concepts engaging and rewarding.</h1>
-            </div>
-            <div class="box2">
-                <h1 class="box_header">Guidance</h1>
-                <img src="/assets/guide.png" alt="Guidance" class="box_image">
-                <h1 class="box_text">Enjoy learning with interactive lessons and coding challenges that make mastering
-                    coding concepts engaging and rewarding.</h1>
-            </div>
-            <div class="box3">
-                <h1 class="box_header">Earn Certificate</h1>
-                <img src="/assets/certificate.png" alt="Earn Certificate" class="box_image">
-                <h1 class="box_text">Earn certifications and badges. Showcase on resumes, LinkedIn, or portfolios to
-                    demonstrate coding expertise to employers.</h1>
-            </div>
-        </div>
-    </div>
-
-    <!----------------- FOURTH PAGE---------------------->
-
-    <div class="fourth_page">
-        <h1 class="fourth_page_header_1">Price</h1>
-        <h1 class="fourth_page_text_1">Unlock your coding potential with our flexible pricing plans designed to fit your
-            budget and learning needs</h1>
-        <div class="price_table">
-            <table>
-                <tr>
-                    <th>Free</th>
-                    <th>Starter</th>
-                    <th>Pro</th>
-                </tr>
-                <tr class="data_row">
-                    <td>5 Free AI prompts</td>
-                    <td>Unimited Access(AI)</td>
-                    <td>Unimited Access(AI)</td>
-                </tr>
-                <tr class="data_row">
-                    <td>1 Course</td>
-                    <td>10 Courses</td>
-                    <td>Unimited Courses</td>
-                </tr>
-                <tr class="data_row">
-                    <td>Limited Quizzes</td>
-                    <td>Unimited Quizzes</td>
-                    <td>Unimited Quizzes</td>
-                </tr>
-                <tr class="data_row">
-                    <td></td>
-                    <td>E-Certificate</td>
-                    <td>Physical Certificate</td>
-                </tr>
-                <tr class="data_row">
-                    <td></td>
-                    <td>Dev Tools</td>
-                    <td>Diploma</td>
-                </tr>
-                <tr class="data_row">
-                    <td></td>
-                    <td></td>
-                    <td>All Dev Tools</td>
-                </tr>
-                <tr class="table_footer">
-                    <td>$0</td>
-                    <td>$50</td>
-                    <td>$150</td>
-                </tr>
-
-            </table>
-        </div>
-        <h1 class="fourth_page_footer">🚀 Ready to get started? Sign Up or Contact us for more information.</h1>
-    </div>
-
-    <!-----------------CONTACT PAGE--------------------->
-
-    <div class="contact_page">
-        <h1 class="contact_page_header_1">Contact Us</h1>
-        <div class="contact_info">
-            <div class="contact_image"></div>
-            <div class="social_links">
-                <p class="links_header">Social Links</p>
-                <i class='bx bxl-linkedin-square'></i><a href="">linkedln.com/in/codeLK</a><br><br>
-                <i class='bx bxl-facebook-circle'></i><a href="">facebook.com/codeLK</a><br><br>
-                <i class='bx bxl-gmail'></i><a href="">codelk@gmail.com</a>
-            </div>
-            <div class="address">
-                <p class="links_header">Address</p>
-                <i class='bx bxs-map' style='color:#ffffff'></i><a href="">No.100 <br>&nbsp;&nbsp;&nbsp;&nbsp;
-                    Colombo<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Lanka</a>
-            </div>
-            <div class="contact_no">
-                <p class="links_header">Contact No</p>
-                <i class='bx bxs-phone'></i><a href="">+94 77 123 4567</a>
-            </div>
-        </div>
-
-        <div class="site_links">
-
-            <dl>
-                <dt class="site_links_header">Languages</dt>
-                <ul>
-                    <li><a href="">Python</a></li>
-                    <li><a href="">C++</a></li>
-                    <li><a href="">Ruby</a></li>
-                    <li><a href="">Java</a></li>
-                    <li><a href="">Javascript</a></li>
-                    <li><a href="">HTML</a></li>
-                    <li><a href="">CSS</a></li>
-                </ul>
-            </dl>
-            <dl>
-                <dt class="site_links_header">Courses</dt>
-                <ul>
-                    <li><a href="">Web Development</a></li>
-                    <li><a href="">Data Science</a></li>
-                    <li><a href="">Software Development</a></li>
-                    <li><a href="">App Development</a></li>
-                    <li><a href="">Ui/Ux Design</a></li>
-                    <li><a href="">Cloud Computing</a></li>
-                    <li><a href="">Machine Learning</a></li>
-                </ul>
-            </dl>
-            <dl>
-                <dt class="site_links_header">Editors</dt>
-                <ul>
-                    <li><a href="">Online SQL editor</a></li>
-                    <li><a href="">Online Html editor</a></li>
-                    <li><a href="">Online Python editor</a></li>
-                    <li><a href="">Online Javascript editor</a></li>
-                </ul>
-            </dl>
-            <dl>
-                <dt class="site_links_header">Features</dt>
-                <ul>
-                    <li><a href="">CodeLK AI</a></li>
-                    <li><a href="">Coding Quizzes</a></li>
-                    <li><a href="">Chat</a></li>
-                    <li><a href="">Community</a></li>
-                    <li><a href="">Cloud Storage</a></li>
-                    <li><a href="">Mobile App</a></li>
-                </ul>
-            </dl>
-        </div>
-    </div>
-    <footer>Designed by Dinesh Harsha</footer>
-</body>
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    /* min-width: 383px; */
+}
 
 
-</html>
+.main_section{
+    padding: 0 80px 34px 80px;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    /* background-color: #000000; */
+    background-position: center;
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/main_bg.jpg');
+}
+
+
+/* .main_bg{
+    width: 100%;
+    height: 900px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+nav{
+    top: 0;
+    position: relative;
+    width: 100%;
+    left: 0;
+    padding: 34px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    /* background-color: blue; */
+}
+
+nav::before{
+    content: '';
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+    z-index: -1;
+}
+
+#check{
+    position: absolute;
+    display: none;
+
+}
+
+.logo a{
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+
+
+.nav_links{
+   
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav_links li{
+    display:inline-block;
+    margin:0 20px;
+
+}
+
+.nav_links li a {
+    text-decoration: none;
+    color:white;
+    font-family: montserrat;
+    font-size: 18px;
+    font-weight:500;
+    border-bottom: 0;   
+
+}
+
+.nav_links li a:hover{
+    border-bottom: 4px solid red;
+    transition: 0.1s ease;
+    border-radius: 4px;
+}
+
+
+.login_btn{
+    width: 150px;
+    height: 45px;
+    border-radius: 40px;
+    border:0;
+    background-color: #4FFF00;
+    font-size: 18px;
+    color: #000000;
+    font-family: montserrat;
+    font-weight: 700;
+}
+
+.login_btn:hover{
+    -webkit-box-shadow:0px 0px 19px 9px rgba(81,255,0,0.9);
+    -moz-box-shadow: 0px 0px 19px 9px rgba(81,255,0,0.9);
+    box-shadow: 0px 0px 19px 9px rgba(81,255,0,0.9);
+    transition-duration: 0.3s;
+
+}
+
+.icons{
+    position: absolute;
+    font-size:24px ;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+   
+.home_header_1{
+    color: white;
+    font-weight: 700;
+    font-size: 72px;
+    max-width: 1040px;
+    margin-top:155px;
+}
+
+.home_header_1 >p{
+    margin: 0;
+    
+}
+
+.home_header_1_yellow{
+    color: #4FFF00;
+}
+
+.home_header_2{
+    margin-top: 34px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.home_header_2 >p{
+    margin: 0;
+}
+
+.start_btn{
+    color: #000000;
+    font-family: montserrat;
+    height: 57px;
+    width: 180px;
+    border: none;
+    border-radius: 40px;
+    background-color: #4FFF00;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 60px 0 241px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* -webkit-box-shadow:0px 0px 55px 0px rgba(81,255,0,0.58); */
+    /* -moz-box-shadow: 0px 0px 55px 0px rgba(81,255,0,0.58); */
+    box-shadow: 0px 0px 55px 0px rgba(81,255,0,0.28);
+
+
+}
+
+#st_btn{
+    font-size: 24px;
+
+}
+
+.start_btn:hover{
+    box-shadow: 0px 0px 19px 9px rgba(81,255,0,0.9);
+    transition-duration: 0.3s;
+
+}
+
+
+/* -------------Second Page Styles------------- */
+
+
+
+.second_page{
+    padding: 0 80px 80px 80px;
+    height: auto;
+    width: 100%;
+    background-image: url(/assets/haikei\ 3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
+
+.double_image{
+    /* padding-top: 193px; */
+    /* background-color: black; */
+    flex: 1 0 475px;
+    width: 475px;
+    height: 600px;
+
+}
+
+.contain{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.first_image{
+    position: absolute;
+    border-radius: 16px;
+    height: 345px;
+    width: 345px;
+    background-image: url(/assets/man1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-box-shadow: 6px 6px 16px 0px rgba(0,0,0,0.62);
+    -moz-box-shadow: 6px 6px 16px 0px rgba(0,0,0,0.62);
+    box-shadow: 6px 6px 16px 0px rgba(0,0,0,0.62);
+
+}
+
+.second_image{
+    position: relative;
+    border-radius: 16px;
+    height: 345px;
+    width: 345px;
+    background-image: url(/assets/man2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: red;
+    transform: translate(172px ,172px);
+    -webkit-box-shadow: 6px 6px 16px 0px rgba(0,0,0,0.62);
+    -moz-box-shadow: 6px 6px 16px 0px rgba(0,0,0,0.62);
+    box-shadow: 6px 6px 16px 0px rgba(0,0,0,0.62);
+    
+
+}
+
+
+
+.second_page_header_1{
+    display: grid;
+    justify-content: end;
+    text-align: center;
+    font-size: 72px;
+    font-weight: 700 ;
+    margin: 0;
+    padding-top: 70px;
+    /* padding-right: 20px; */
+}
+
+.login_form{
+    /* min-width: 300px; */
+    margin-top: 50px;
+    border-radius: 16px;
+    height: 563px;
+    width: 422px;
+    background-color: #fafafa;
+    box-shadow: 6px 6px 16px 0px rgba(0,0,0,0.62);
+    padding: 42px 57px;
+    display: grid;
+    justify-content: center;
+
+
+}
+
+.form_header{
+    margin-top: 0;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+
+}
+
+form > label{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+form > input{
+    padding-left: 20px;
+    margin:28px 0;
+    width: 300px;
+    height: 56px;
+    border-radius: 16px;
+    border: 2px solid white;
+    background-color: #d9d9d9;
+    outline: none;
+    color: #000000;
+    font-size: 18px;
+    
+}
+
+form >input:hover{
+    border: 2px solid;
+    border-color: #ff4800;
+    /* transition-duration: 0.3s; */
+    transition: ease 0.5s;
+
+}
+
+form > input::placeholder{
+    font-family: montserrat;
+    font-size: 14px;
+    /* padding: 20px; */
+
+
+}
+
+.form_footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_footer_text{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form_btn{
+    width: 300px;
+    height: 56px ;
+    border-radius: 16px;
+    border: 0;
+    background-color: #4FFF00;
+    color: #000000;
+    font-size: 18px;
+    font-family: montserrat;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.form_btn:hover{
+
+    color: #4FFF00;
+    background-color: #000000;
+    transition-duration:0.3s;
+}
+
+
+/* -------------Third Page Styles---------------- */
+
+
+.third_page{
+    padding: 0 80px 0px 80px;
+}
+
+
+
+.third_page_header_1{
+    text-align: center;
+    font-size: 72px;
+
+}
+
+.third_container{
+    /* background-color:blue;
+    border: 11px solid rgb(2, 17, 3); */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin:80px 0;
+}
+
+.box1{
+    /* flex: 0 0 305px; */
+    margin-bottom: 40px;
+    height: 370px;
+    width: 305px;
+    /* height: 370px; */
+    background-color: #fafafa;
+    border-radius: 16px;
+    box-shadow: 6px 6px 16px 0px rgba(0,0,0,0.62);
+    text-align: center;
+    font-weight: medium;
+
+}
+.box2{
+    /* flex: 0 0 305px; */
+    margin-bottom: 40px;
+    height: 370px;
+    width: 305px;
+    /* height: 370px; */
+    background-color: #fafafa;
+    border-radius: 16px;
+    box-shadow: 6px 6px 16px 0px rgba(0,0,0,0.62);
+    text-align: center;
+
+}
+.box3{
+    /* flex: 0 0 305px ; */
+    margin-bottom: 40px;
+    height: 370px;
+    width: 305px;
+    /* height: 370px; */
+    background-color:#fafafa;
+    border-radius: 16px;
+    box-shadow: 6px 6px 16px 0px rgba(0,0,0,0.62);
+    text-align: center;
+    
+    
+}
+
+
+
+.box_header{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.box_image{
+    height: 129px;
+    width: 119px;
+}
+
+.box_text{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    padding: 0 12px;
+
+}
+
+
+
+/* ------------Fourth page styles--------------- */
+
+
+.fourth_page{
+    background-color: #000000;
+    padding: 34px 80px 34px 80px;
+}
+
+.fourth_page_header_1{
+
+    font-size: 72px;
+    font-weight: 700px;
+    color: white;
+    text-align: center;
+    
+}
+
+.fourth_page_text_1{
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 24px;
+}
+
+.price_table{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+
+    border-collapse: collapse;
+    background-color: white;
+    border: none;
+    margin: 40px 0;
+
+  
+}
+
+
+
+table th{
+
+
+    background-color:#4FFF00 ;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    font-weight: 700;
+    padding: 0;
+    
+}
+
+table td{
+    /* background-color:rgba(79, 255, 0, 0.25) ; */
+    color:#000000;
+    font-size: 20px;
+    font-weight: 500;
+    width: 300px;
+    text-align: center; 
+    padding: 4px;
+    border: none;
+}
+
+.data_row{
+    border-top:8px solid white ;
+    background-color:rgba(79, 255, 0, 0.25) ;
+
+    
+}
+
+.table_footer{
+    background-color:rgba(2,48,32,1);
+    border-top:8px solid white ;
+}
+
+.table_footer > td{
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.fourth_page_footer{
+    color:white;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500; 
+}
+
+
+
+/* ----------------Contact Us Styles------------------ */
+
+.contact_page{
+    background-color: #000000;
+    padding: 34px 80px;
+}
+
+.contact_page_header_1{
+    color: white;
+    font-size: 72px;
+    font-weight: 700px;
+    text-align: center;
+}
+
+.contact_info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact_image{
+    width: 197px;
+    height: 197px;
+    background-image: url(/assets/contact\ image.png);
+    border-radius: 16px;
+    box-shadow: 0px 0px 29px 0px rgba(250,250,250,0.61);
+}
+
+.links_header{
+    font-size: 24px;
+    text-decoration: underline;
+    color: white;
+}
+
+.social_links{
+    color: white;
+
+}
+
+
+
+.social_links a{
+    font-size: 18px;
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    border:2px solid black ;
+}
+
+.social_links a:hover{
+    border-bottom: 2px solid #4FFF00;
+    transition: 0.3s;
+}
+
+.address a{
+    font-size: 18px;
+    margin-left: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.contact_no{
+    color: white;
+}
+
+.contact_no a{
+    font-size: 18px;
+    margin-left: 8px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.site_links{
+    flex-wrap: wrap;
+    padding: 80px 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site_links_header{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.site_links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    border: 2px solid black;
+    
+}
+
+.site_links li a:hover{
+    border-bottom: 2px solid #4FFF00;
+    transition: 0.3s;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    background-color: black;
+    font-size: 12px;
+    padding: 10px 0 ;
+}
+
+/* BREAKPOINTS */
+
+@media (max-width: 1120px){
+    .second_page{
+        padding: 0 60px;
+    }
+
+    .first_image{
+        height: 325px;
+        width: 325px;
+    }
+
+    .second_image{
+        height: 305px;
+        width: 305px;
+    }
+
+    .fourth_page{
+        padding: 24px 60px;
+    }
+
+    .contact_page{
+        padding: 24px 60px ;
+    }
+}
+
+
+
+
+@media (max-width: 1003px){
+    /* nav{
+        padding: 34px 50px;
+    } */
+
+    .main_section{
+        padding: 0 70px 34px 70px;
+    }
+
+    .home_header_1 > p{
+        font-size: 60px;
+    }
+
+    .home_header_1{
+        margin-top: 145px;
+    }
+
+    .home_header_2>p{
+        font-size: 14px;
+    }
+
+    .second_page_header_1{
+        font-size: 60px;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+
+    .contain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    /* .second_page{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    .double_image{
+        justify-content: center;
+    
+    }
+
+    .fourth_page_header_1{
+        font-size: 60px;
+    }
+    
+    .fourth_page_text_1{
+        font-size: 20px;
+    }
+
+    .fourth_page_footer{
+        font-size: 20px;
+    }
+
+    .contact_page_header_1{
+        font-size: 60px;
+    }
+
+    /* .login_form{
+        position: relative;
+        transform: translateX(50%);
+    } */
+}
+
+
+@media (max-width: 945px){
+    .icons{
+        display: inline-flex;
+        right: 0px;
+    }
+
+    #check:checked~ .icons > #menu_icon {
+        display: none;
+    }
+    
+
+    #check:checked~ .icons > #close_icon{
+        display: block;
+    }
+
+
+    .icons #close_icon{
+        display: none;
+    }
+    
+    .nav_links{
+        position:absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(0,0,0,0.9);
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+        border: 0px solid rgba(0,0,0,0.275);
+        overflow: hidden;
+        transition: .3s ease;
+
+    }
+     
+
+    .login_btn{
+        /* position: absolute; */
+        
+        top:0;
+        left: 0;
+    }
+
+    .nav_links li{
+        display: block;
+        margin: 20px 0;
+        text-align: center;
+
+    }
+
+
+    #check:checked ~ .nav_links {
+        height: 310px; /* or any other color you prefer */
+      }
+
+    .nav_links > a {
+        display: block;
+        font-size: 1.5em;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+
+
+    table th{
+        font-size: 24px;
+    }
+
+    .data_row td{
+        font-size: 14px;
+    }
+
+    .table_footer td{
+        font-size: 24px;
+    }
+
+    .contact_image{
+        width: 187px;
+        height: 187px;
+    }
+
+    .links_header{
+        font-size: 20px;
+    }
+
+    .social_links a{
+        font-size: 14px;
+    }
+
+    .address a{
+        font-size: 14px;
+    }
+    
+    .contact_no a{
+        font-size: 14px;
+
+    }
+
+    .site_links li a{
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 605px){
+
+    .main_section{
+        padding: 0 50px 14px 50px;
+    }
+
+    .home_header_1{
+        margin-top: 125px;
+    }
+
+    .home_header_1 > p{
+        font-size: 48px;
+    }
+
+    .second_page{
+        padding: 0 40px;
+    }
+
+    .first_image{
+        height: 165px;
+        width: 165px;
+    }
+
+    .second_image{
+        height: 145px;
+        width: 145px;
+        transform: translate(85px,85px);
+    }
+
+    .login_form{
+        /* min-width: 300px; */
+        height: 400px;
+        width: 250px;
+        /* margin-right: 60px; */
+
+    } 
+    .double_image{
+        /* width: 290px; */
+        width: 227px;
+        flex-basis: 300px;
+    }
+
+    .contain{
+        padding:20px ;
+    }
+
+    .login_form{
+        padding:10px;
+    }
+
+    form{
+        width: 220px;
+        height: 403px;
+    }
+
+    .form_header{
+        font-size: 32px;
+        margin: 10px;
+        margin-bottom: 10px;
+    }
+
+    form > label{
+        font-size: 14px;
+    }
+
+
+    form > input{
+        width: 220px;
+        margin: 12px 0;
+        height: 46px;
+
+    }
+
+    input::placeholder{
+        font-size: 12px;
+    }
+
+    .form_btn{
+        width: 220px;
+        margin-top: 30px;
+        height: 46px;
+    }
+
+    .form_footer{
+        padding-top: 10px;
+    }
+    .form_footer_text{
+        font-size: 12px;
+
+    }
+
+    .third_page{
+        padding: 0 40px ;
+    }
+
+    .third_page_header_1{
+        font-size: 48px;
+    }
+
+
+    .box_header{
+        font-size: 24px;
+        margin:12px 0;
+    }
+
+    .box_text{
+        font-size: 12px;
+    }
+    
+    .box1{
+        height: 265px;
+        width: 250px;
+    }
+    .box2{
+        height: 265px;
+        width: 250px;
+    }
+    .box3{
+        height: 265px;
+        width: 250px;
+
+    }
+
+    .box_image{
+        height: 109px;
+        width: 99px;
+    }
+    
+    .fourth_page{
+        padding: 14px 40px;
+    }
+
+    .fourth_page_header_1{
+        font-size: 48px;
+    }
+
+    .fourth_page_text_1{
+        font-size: 18px;
+    }
+
+    table th{
+        font-size: 20px;
+    }
+
+
+    .data_row td{
+        font-size: 12px;
+    }
+
+    .table_footer td{
+        font-size: 20px;
+    }
+
+    .fourth_page_footer{
+        font-size: 14px;
+    }
+
+    .contact_page{
+        padding: 14px 40px;
+    }
+
+    .contact_page_header_1{
+        font-size: 48px;
+    }
+
+    .contact_image{
+        width: 165px;
+        height: 165px;
+    }
+}
+
+
+.toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4FFF00;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    transition-duration:ease 0.4s;
+  }
+  

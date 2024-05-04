@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling Hearts Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <video autoplay muted loop id="video-background">
+        <source src="Love Hearts - Free VJ Loop - Royalty Free_2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+    <div class="letter">
+        <div class="header">
+            <p>Ishu</p>
+        </div>
+        <div class="message">
+            <p class="text" id="text"></p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const text = "There's something I really need to say to you... I'm genuinely sorry if I caused you any pain. That day was rough for me, but that's no excuse for hurting you...<br><br>I take full responsibility for my actions. It's on me, not you.No matter what, my love for you remains unwavering. Please don't walk away when I need you the most. You're my strength, and I can't bear the thought of being without you.<br><br>I'm committed to making things right. I need your help with that. Let's talk openly and honestly. I promise i will never bother you.<br><br>You're not just my bestfriend; you're my partner, my confidante, and my sister. I trust you so much...<br><br>Please talk to me...I'll understand you...forgive me. "
+            let index = 0;
+            const typingSpeed = 50; // Adjust typing speed (milliseconds per character)
+
+            function type() {
+                if (index < text.length) {
+                    if (text.charAt(index) === '<') {
+                        // If the current character is '<', find the closing '>' and append the tag
+                        const endIndex = text.indexOf('>', index);
+                        document.getElementById('text').innerHTML += text.substring(index, endIndex + 1);
+                        index = endIndex + 1;
+                    } else {
+                        // If not a tag, append the character
+                        document.getElementById('text').innerHTML += text.charAt(index);
+                        index++;
+                    }
+                    setTimeout(type, typingSpeed);
+                }
+            }
+
+            type();
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>

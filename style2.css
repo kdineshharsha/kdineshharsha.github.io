@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Kaushan+Script&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:red;
+}
+
+#video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
+.letter {
+  width: 400px;
+  height: 90vh;
+  background-color: black;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.4);
+-webkit-backdrop-filter: blur(3px);
+backdrop-filter: blur(3px);
+border: 1px solid rgba(255,255,255,0.2);
+}
+
+.header {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 55px;
+}
+
+.message {
+  margin-top: 30px;
+  font-family: "Aref Ruqaa", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  padding-inline: 30px;
+  display: inline-block;
+  text-align: justify;
+
+
+}
+
+.text {
+  
+  white-space: pre-wrap;
+  overflow: hidden;
+  animation: typing 1s steps(40, end), blink-caret .5s step-end infinite alternate;
+
+
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
